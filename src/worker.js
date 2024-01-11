@@ -18,7 +18,7 @@ export default {
     // You'll find it helpful to parse the request.url string into a URL object. Learn more at https://developer.mozilla.org/en-US/docs/Web/API/URL
     const url = new URL(request.url);
 
-    if (url.pathname.startsWith('/webhook')) {
+    if (url.pathname.startsWith('/hook-line-sinker-a44132bdfe2')) {
       // You can also use more robust routing
       return apiRouter.handle(request, env);
     } else {

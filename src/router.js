@@ -71,7 +71,7 @@ class Router {
 const router = new Router();
 
 // POST to the collection (we'll use async here)
-router.post("/webhook", async ({ request }) => {
+router.post("/hook-line-sinker-a44132bdfe2", async ({ request }) => {
 	const FORM_ID = "fqns40qs"
 
 	const env = router.env
@@ -83,6 +83,9 @@ router.post("/webhook", async ({ request }) => {
 		headers: {
 			Authorization: `BEARER ${env.TYPEFORM_PAT}`,
 			'Content-Type': 'application/json'
+		},
+		cf: {
+			cacheTtl: 0
 		}
 	}
 
